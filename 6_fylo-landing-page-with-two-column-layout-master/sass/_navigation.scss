@@ -1,0 +1,82 @@
+:root{
+    // ### Primary
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+// ### Accent
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+// ### Neutral
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+    --font-Raleway: 'Raleway', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+}
+
+img{
+    max-width: 100%;
+}
+
+/*NAVIGATION*/
+
+.navigation{
+    // background-color: chartreuse;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    &__logo{
+        width: 8rem;
+    }
+}
+
+.list{
+    display: flex;
+    
+    &__link{
+        margin: 0 1rem;
+        list-style: none;
+    }
+
+    &__text{
+        text-decoration: none;
+        color: var(--Very-Dark-Blue);
+        font-family: var(--font-Raleway);
+        font-size: 1.2rem;
+    }
+}
+
+
+/*RESPONSIVE*/
+/* Móviles en horizontal o tablets en vertical */
+@media (min-width: 768px){
+    .navigation{
+        margin-top: 2.5rem;
+    
+        &__logo{
+            width: 13rem;
+        }
+    }
+    .list__text{
+        font-size: 1.7rem;
+    }
+
+}

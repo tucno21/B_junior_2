@@ -187,6 +187,7 @@ body{
 .section__link:hover{
     color: var(--White);
     border-bottom: 1px solid var(--White);
+    filter: saturate(0);/*modifica una figura svg*/
 }
 /*testimonials*/
 
